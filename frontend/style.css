@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: white;
+    color: black;
+}
+
+h1 {
+    margin: 0;
+    padding: 40px 20px 20px;
+}
+
+p {
+    padding: 0 20px;
+}
+
+form {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px;
+}
+
+input,
+button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+}
+
+button,
+input[type="submit"] {
+    background: chocolate;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    display: inline-block;
+    margin: 10px 20px;
+    color: black;
+}
