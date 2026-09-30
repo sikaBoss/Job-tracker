@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <title>Employer | Job Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+    <a class="logo" href="index.html">JOB<span>TRACKER</span></a>
+    <nav class="navigation" id="site-navigation" aria-label="Main navigation">
+        <a href="index.html"><button class="nav-btn" type="button">Home</button></a>
+        <a href="jobs.html"><button class="nav-btn" type="button">Jobs</button></a>
+        <a href="matching.html"><button class="nav-btn" type="button">Matching</button></a>
+        <a href="account.html"><button class="nav-btn" type="button">Account</button></a>
+    </nav>
+    <button class="menu-btn" type="button" aria-label="Open navigation" aria-controls="site-navigation" aria-expanded="false" onclick="toggleMenu()">☰</button>
+</header>
+
+<main class="page">
+    <section class="section account-intro">
+        <h1 class="page-title">Employer Account</h1>
+        <p class="hero-text">
+            Create an employer account to prepare your company profile and manage your recruitment activity.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>Create an Employer Account</h3>
+                <p>Set up your employer information.</p>
+                <a class="primary-btn" href="employer-acc.html">Create Account</a>
+            </div>
+
+            <div class="info-card">
+                <h3>Already registered?</h3>
+                <p>Go to the login page to access your account.</p>
+                <a class="secondary-btn" href="login.html">Login</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">Job Tracker</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <title>Matching | Job Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+    <a class="logo" href="index.html">JOB<span>TRACKER</span></a>
+    <nav class="navigation" id="site-navigation" aria-label="Main navigation">
+        <a href="index.html"><button class="nav-btn" type="button">Home</button></a>
+        <a href="jobs.html"><button class="nav-btn" type="button">Jobs</button></a>
+        <a href="matching.html"><button class="nav-btn" type="button">Matching</button></a>
+        <a href="account.html"><button class="nav-btn" type="button">Account</button></a>
+    </nav>
+    <button class="menu-btn" type="button" aria-label="Open navigation" aria-controls="site-navigation" aria-expanded="false" onclick="toggleMenu()">☰</button>
+</header>
+
+<main class="page">
+    <section class="section">
+        <h1 class="page-title">Job Matching</h1>
+        <p class="page-subtitle">Set your preferences. Your backend can later use these details to find suitable jobs.</p>
+
+        <form class="form-card" method="post">
+            <h2 class="form-title">Matching Preferences</h2>
+            <p class="form-description">Frontend form only — no matching logic is included.</p>
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label class="form-label" for="field">Field</label>
+                    <input class="form-input" id="field" name="field" type="text" placeholder="e.g. Computer Science">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="location">Preferred Location</label>
+                    <input class="form-input" id="location" name="location" type="text" placeholder="Location">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="experience">Experience Level</label>
+                    <select class="form-select" id="experience" name="experience">
+                        <option value="">Select level</option>
+                        <option>Entry Level</option>
+                        <option>Intermediate</option>
+                        <option>Experienced</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="employment">Employment Type</label>
+                    <select class="form-select" id="employment" name="employment">
+                        <option value="">Select type</option>
+                        <option>Full Time</option>
+                        <option>Part Time</option>
+                        <option>Internship</option>
+                        <option>Contract</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button class="submit-btn" type="submit">Save Preferences</button>
+            </div>
+        </form>
+    </section>
+</main>
+
+<footer class="footer">Job Tracker</footer>
+<script src="script.js"></script>
+</body>
+</html>

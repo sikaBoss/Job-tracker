@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <title>Graduate Account | Job Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+    <a class="logo" href="index.html">JOB<span>TRACKER</span></a>
+    <nav class="navigation" id="site-navigation" aria-label="Main navigation">
+        <a href="index.html"><button class="nav-btn" type="button">Home</button></a>
+        <a href="jobs.html"><button class="nav-btn" type="button">Jobs</button></a>
+        <a href="matching.html"><button class="nav-btn" type="button">Matching</button></a>
+        <a href="account.html"><button class="nav-btn" type="button">Account</button></a>
+    </nav>
+    <button class="menu-btn" type="button" aria-label="Open navigation" aria-controls="site-navigation" aria-expanded="false" onclick="toggleMenu()">☰</button>
+</header>
+
+<main class="page">
+    <form class="form-card" method="post">
+        <h1 class="form-title">Graduate Account</h1>
+        <p class="form-description">Create your graduate profile.</p>
+
+        <div class="form-grid">
+            <div class="form-group">
+                <label class="form-label" for="firstname">Firstname</label>
+                <input class="form-input" type="text" id="firstname" name="firstname" placeholder="Firstname" required autocomplete="given-name">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="surname">Surname</label>
+                <input class="form-input" type="text" id="surname" name="surname" placeholder="Surname" required autocomplete="family-name">
+            </div>
+
+            <div class="form-group full">
+                <label class="form-label" for="othernames">Other Names</label>
+                <input class="form-input" type="text" id="othernames" name="othernames" placeholder="Other names" autocomplete="additional-name">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="graduate-email">Email</label>
+                <input class="form-input" type="email" id="graduate-email" name="email" placeholder="Email" required autocomplete="email">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="phone">Phone</label>
+                <input class="form-input" type="tel" id="phone" name="phone" placeholder="Phone number" autocomplete="tel">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="qualification">Highest Qualification</label>
+                <input class="form-input" type="text" id="qualification" name="qualification" placeholder="Qualification">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="location">Location</label>
+                <input class="form-input" type="text" id="location" name="location" placeholder="Location" autocomplete="address-level2">
+            </div>
+
+            <div class="form-group full">
+                <label class="form-label" for="skills">Skills</label>
+                <textarea class="form-textarea" id="skills" name="skills" placeholder="Enter your skills"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="graduate-password">Password</label>
+                <div class="password-field">
+                    <input class="form-input" type="password" id="graduate-password" name="password" placeholder="Password" required autocomplete="new-password">
+                    <button class="password-toggle" type="button" data-password-toggle="graduate-password" aria-label="Show password" aria-pressed="false">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="graduate-confirm-password">Confirm Password</label>
+                <div class="password-field">
+                    <input class="form-input" type="password" id="graduate-confirm-password" name="confirm_password" placeholder="Confirm password" required autocomplete="new-password">
+                    <button class="password-toggle" type="button" data-password-toggle="graduate-confirm-password" aria-label="Show password" aria-pressed="false">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-actions">
+            <button class="submit-btn" type="submit">Create Graduate Account</button>
+            <a class="secondary-btn" href="login.html">Already Have an Account</a>
+        </div>
+    </form>
+</main>
+
+<footer class="footer">Job Tracker</footer>
+<script src="script.js"></script>
+</body>
+</html>
